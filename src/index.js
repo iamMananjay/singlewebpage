@@ -3,16 +3,27 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {Content} from './Content';
+import {BrowserRouter} from 'react-router-dom'
+
+import {Context} from './Context'
 
 
 ReactDOM.render(
   <React.StrictMode>
+   
       
-  
-       <Content>
-          <App />
-       </Content>
+     <Context>
+     <BrowserRouter>
+      <App />
+
+      </BrowserRouter>
+     </Context>
+      
+    
+
+    
+      
+       
       
       
   </React.StrictMode>,
